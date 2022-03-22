@@ -1,0 +1,211 @@
+body {
+    padding-top: 5rem;
+}
+
+.string_feilds, .textarea_feild, .int_feilds, .decimal_feilds, .file_feilds {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li.property_container {
+    width: 29%;
+    filter: drop-shadow(2px 4px 6px #00000044);
+    background-color: white;
+    margin: 1%;
+    display: inline-block;
+}
+
+img.prop {
+    width: 100%;
+    overflow: hidden;
+}
+
+button {
+    width: 100%;
+    border: none;
+    height: 45px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #0dcaf0;
+}
+
+.property-details-container{
+    padding: 5%;
+}
+
+h1 {
+    font-size: 30px;
+    color: #1b3c3d;
+}
+
+p.property_title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+p.property_location {
+    font-size: 14px;
+    color: #a1a1a1;
+    margin: 10px 0px 0px 0px;
+}
+
+p.property_price {
+    font-size: 14px;
+    margin: 4% 0%;
+    border-radius: 30px;
+    color: white;
+    background-color: #55a1e4;
+    text-align: center;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 25px 0px 0px 0px;
+}
+
+
+.individual_property_container{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.individual_property_image {
+    height: 350px;
+    width: auto;
+}
+
+.individual_property_image_container {
+    width: 400px;
+    height: auto;   
+    overflow: hidden;
+}
+
+.individual_property_info_container{
+    width: 500px;
+    padding: 20px;
+    height: auto;
+}
+
+.individual_property_container {
+    width: 900px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    filter: drop-shadow(0px 0px 6px #00000033);
+}
+
+
+.contain_center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+
+button.email_realtor {
+    width: 125px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+p.property_title.ip {
+    margin: 20px 0px;
+}
+
+p.property_propertytype.ip {
+    padding: 5px 10px;
+    margin: 0px 10px;
+    background-color: #eab11e;
+    color: white;
+    border-radius: 10pc;
+}
+
+.splitone {
+    margin: 10px 0px;
+}
+
+p.property_bathrooms.ip, p.property_rooms.ip {
+    margin: 10px;
+}
+
+
+p.property_location.ip {
+    margin: 15px 0px;
+}
+
+p.property_description.ip {
+    margin: 10px 0px;
+}
+
+
+.form_container, .contain2, .contain1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 50%;
+    padding: 40px;
+    background: white;
+    filter: drop-shadow(0px 0px 6px #00000033);
+}
+
+input.form-content, textarea#description,select#propertytype {
+    display: block;
+    width: 80%;
+    height: 40px;
+    border: none;
+    background-color: white;
+    filter: drop-shadow(0px 0px 2px #00000055);
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+}
+
+textarea#description{
+    width: 80% !important;
+    height: 100px !important;
+    padding: 10px 10px;
+
+}
+
+.contain2one, .contain1one {
+    width: 50%;
+}
+
+input#photo {
+    display: block;
+    margin: 10px 0px 20px 0px;
+}
+
+button.btn.btn-primary {
+    width: 150px;
+}
+
+.notifbar {
+    position: fixed;
+    top: 56px;
+    z-index: 1030;
+    background-color: white;
+    color: white;
+    height: 26px;
+    width: 100%;
+}
+
+li.message {
+    background-color: #70d419;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    padding-left: 38px;
+}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<h1 style="padding: 10px 40px;">Properties</h1>
+<ul> 
+    {% for i in data %}
+    <li class="property_container">
+        <img src="{{ url_for('get_image', filename=i.filename) }}" class="prop"/>
+        
+        <div class="property-details-container">
+            <p class="property_title">{{i.title}}</p>
+            <p class="property_location"><i class='bx bx-current-location'></i>{{i.location}}</p>
+            <p class="property_price">{{i.price}}</p>
+        </div> 
+        <a href="{{ url_for('individualProperty', propertyid=i.id) }}"><button>View Property</button></a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

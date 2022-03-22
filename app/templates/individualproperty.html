@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="contain_center">
+    <div class="individual_property_container">
+        
+        <div class="individual_property_image_container">
+            <img src="{{ url_for('get_image', filename=individualData.filename) }}" class="individual_property_image"/>
+        </div>
+        
+
+        <div class="individual_property_info_container">
+            <p class="property_title ip">{{individualData.title}}</p>
+
+            <div class="splitone">
+                <p class="property_price ip" style="display: inline;">{{individualData.price}}</p>
+                <p class="property_propertytype ip" style="display: inline;">{{individualData.propertytype}}</p>
+            </div>
+            
+
+            <p class="property_description ip">{{individualData.description}}</p>
+            <div class="splittwo">
+                <p class="property_bathrooms ip" style="display: inline;"><i class='bx bx-bed' ></i> {{individualData.bathrooms}} Bedrooms</p>
+                <p class="property_rooms ip" style="display: inline;"><i class='bx bx-bath' ></i> {{individualData.rooms}} Bathrooms</p>
+            </div>
+            
+
+            <p class="property_location ip"><i class='bx bx-current-location'></i> {{individualData.location}}</p>     
+            
+            <button class="email_realtor">Email Realtor</button>
+        </div>
+        
+    </div>
+</div>
+    
+{% endblock %}
